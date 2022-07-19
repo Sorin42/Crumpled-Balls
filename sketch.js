@@ -24,6 +24,7 @@ function setup() {
 
 	var ball_options={
 		isStatic:false,
+		friction:0.4,
 		restitution:0.3,
 		density:0.4
 	}
@@ -65,7 +66,7 @@ image(dustbinImg,1185, 570, 200,200);
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-		Matter.Body.applyForce(ball,ball.position,{x:85,y:-85});
+		Matter.Body.applyForce(ball,ball.position,{x:45,y:-65});
     
   	}
 }
